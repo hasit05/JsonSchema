@@ -1,0 +1,17 @@
+ {
+              "$id": "/common-resources/schema/CMF.tradeComponentGasFacility.schema.json",
+              "$schema": "http://json-schema.org/draft-04/schema#",
+                
+                  "type": "object",
+                  "properties": {
+                    "gasFacility": {
+                      "type": "string"
+                    },
+                    "gasFacilityId": {
+                      "type": "integer",
+                      "format": "int64"
+                    }
+                  }
+                
+     
+}

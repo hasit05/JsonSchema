@@ -1,0 +1,38 @@
+ {
+              "$id": "/common-resources/schema/CMF.tradeComponentCreditTerms.schema.json",
+      "$schema": "http://json-schema.org/draft-04/schema#",
+                
+                  "type": "object",
+                  "properties": {
+                    "fixedAmountStartDate": {
+                      "type": "string",
+                      "pattern": "^([0]?[1-9]|[1|2][0-9]|[3][0|1])[.\/-]([0]?[1-9]|[1][0-2])[.\/-]([0-9]{4}|[0-9]{2})$"
+                    },
+                    "fixedAmountEndDate": {
+                      "type": "string",
+					            "pattern": "^([0]?[1-9]|[1|2][0-9]|[3][0|1])[.\/-]([0]?[1-9]|[1][0-2])[.\/-]([0-9]{4}|[0-9]{2})$"
+                    },
+                    "faceValuePct": {
+                      "type": "integer",
+                      "format": "int64"
+                    },
+                    "fixedAmount": {
+                      "type": "integer",
+                      "format": "int64"
+                    },
+                    "faceValueProvSched": {
+                      "type": "string"
+                    },
+                    "faceValueReturnSched": {
+                      "type": "string"
+                    },
+                    "includeMarkToMarket": {
+                      "type": "integer",
+                      "format": "int64"
+                    },
+                    "includeSettlements": {
+                      "type": "integer",
+                      "format": "int64"
+                    }
+                  }
+            }

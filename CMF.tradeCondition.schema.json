@@ -1,0 +1,20 @@
+ {
+              "$id": "/common-resources/schema/CMF.tradeCondition.schema.json",
+              "$schema": "http://json-schema.org/draft-04/schema#",
+                
+                  "type": "object",
+                  "properties": {
+                    "conditionId": {
+                      "type": "integer",
+					            "format": "int64"
+                    },
+                    "condition": {
+                      "type": "string"
+                    },
+                    "conditionDetail": {
+                      "type": "string"
+                    }
+                  }
+                
+     
+}

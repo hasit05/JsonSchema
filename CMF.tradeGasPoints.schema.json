@@ -1,0 +1,24 @@
+ {
+              "$id": "/common-resources/schema/CMF.tradeGasPoints.schema.json",
+              "$schema": "http://json-schema.org/draft-04/schema#",
+                
+                  "type": "object",
+                  "properties": {
+                    "flowDirectionId": {
+                      "type": "integer",
+					            "format": "int64"
+                    },
+                    "flowDirection": {
+                      "type": "string"
+                    },
+                    "gasPoint": {
+                      "type": "string"
+                    },
+					          "gasPointId": {
+                      "type": "integer",
+					            "format": "int64"
+                    }
+                  }
+                
+     
+}

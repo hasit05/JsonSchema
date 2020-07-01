@@ -1,0 +1,91 @@
+{
+  "$id": "/common-resources/schema/CMF.base.schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+	"eventId": {
+	  "type": "integer"
+	},
+	"comments": {
+	  "type": "string"
+	},
+	"dealBlotterRef": {
+	  "type": "string"
+	},
+	"hedgeRisk": {
+      "type": "string"
+    },
+	"hedgeRiskId": {
+      "type": "integer",
+	  "format": "int64"
+    },
+    "authorisor": {
+      "type": "string"
+    },
+	"authorisorId": {
+      "type": "integer",
+	  "format": "int64"
+    },
+    "confirmingParty": {
+      "type": "string"
+    },
+	"tradeId": {
+      "type": "integer",
+	  "format": "int64"
+    },
+	"hedgeStrategy": {
+      "type": "string"
+    },
+	"hedgeStrategyId": {
+      "type": "integer",
+	  "format": "int64"
+    },
+	"holidayGroup": {
+      "type": "string"
+    },
+	"holidayGroupId": {
+      "type": "integer",
+	  "format": "int64"
+    },
+    "tradeDate": {
+      "type": "string",
+	    "pattern": "^([0]?[1-9]|[1|2][0-9]|[3][0|1])[.\/-]([0]?[1-9]|[1][0-2])[.\/-]([0-9]{4}|[0-9]{2})$"
+    },
+	"strategy": {
+      "type": "string"
+    },
+	"strategyId": {
+      "type": "integer",
+	  "format": "int64"
+    },
+    "trader": {
+      "type": "string"
+    },
+	"traderId": {
+      "type": "integer",
+	    "format": "int64"
+    },
+	"tradeStatus": {
+      "type": "string",
+	    "enum": ["Contract", "Confirmed", "Pending", "Evaluation", "Rejected", "Matured", "Closed Out", "Terminated"]
+    },
+    "tradeComponents": {
+      "type": "array",
+      "items": [
+        {
+          "$ref": "CMF.tradeComponent.schema.json"
+        }
+      ]
+    }
+  },
+  "required": [
+    "tradeDate",
+    "trader",
+    "holidayGroup",
+    "strategy",
+    "hedgeRisk",
+    "hedgeStrategy",
+    "tradeEntity",
+    "tradeComponents"
+  ]
+}

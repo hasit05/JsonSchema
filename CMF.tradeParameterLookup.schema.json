@@ -1,0 +1,27 @@
+ {
+              "$id": "/common-resources/schema/CMF.tradeParameterLookup.schema.json",
+              "$schema": "http://json-schema.org/draft-04/schema#",
+                
+                  "type": "object",
+                  "properties": {
+                      
+                    "paramLookupType":
+                    {
+                      "type": "string"
+                    },
+                    "paramLookupTypeId":
+                    {
+                      "type": "integer",
+                      "format": "int64"
+                    },
+                    "valueId":
+                    {
+                      "type": "integer",
+                      "format": "int64"
+                    },
+                    "value": 
+                    {
+                      "type": "string"
+                    }
+                  }
+}
